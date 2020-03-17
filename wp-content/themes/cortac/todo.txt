@@ -1,0 +1,5 @@
+Once a form has been submitted, for a period of time visitor will be able to go 
+directly to the resource post page and click a download link or view a video. 
+
+We can embed the videos directly
+What is the best way to present the download?

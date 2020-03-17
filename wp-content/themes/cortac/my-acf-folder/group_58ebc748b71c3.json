@@ -1,0 +1,44 @@
+{
+    "key": "group_58ebc748b71c3",
+    "title": "Resource Salesforce form",
+    "fields": [
+        {
+            "key": "field_58bb0501e23eb",
+            "label": "Your Salesforce.com Organization ID:",
+            "name": "organization_id",
+            "type": "text",
+            "instructions": "To find your Salesforce.com Organization ID, in your Salesforce.com account, go to Setup » Company Profile » Company Information",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "formatting": "html",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "258"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [],
+    "active": 1,
+    "description": "",
+    "modified": 1492632477
+}
