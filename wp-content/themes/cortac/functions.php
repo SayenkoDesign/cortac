@@ -1004,3 +1004,7 @@ function reset_editor() {
 }
 
 add_action("init", "reset_editor");
+
+
+
+add_filter('acf/settings/remove_wp_meta_box', '__return_false');
