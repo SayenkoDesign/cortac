@@ -65,7 +65,9 @@ function cortac_setup() {
         'social' => __('Social Links Menu', 'cortac'),
         'home-header' => __('Banner Menu', 'cortac'),
         'home-contact-us' => __('Contact Us Menu', 'cortac'),
-        'career' => __('career', 'cortac')
+        'career' => __('career', 'cortac'),
+        'resource' => __('Resources Menu', 'cortac')
+        
     ));
 
     /*

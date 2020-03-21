@@ -103,6 +103,7 @@ get_header();
             <div class="collapse navbar-collapse text-center" id="myNavbar">
                 <ul class="nav navbar-nav">
                     <?php
+                    /*
                     usort($resource_categories, function($a, $b){ return strcasecmp($a->label,$b->label); });
                     foreach ($resource_categories as $key => $value) {
                         if ($value->name == 'post_format') {
@@ -111,6 +112,31 @@ get_header();
                             echo "<li class='active'><a href='" . $current_page_url . "?category=" . $value->name . "'>" . $value->label . "</a></li>";
                         } else {
                             echo "<li><a href='" . $current_page_url . "?category=" . $value->name . "'>" . $value->label . "</a></li>";
+                        }
+                    }
+                    */
+                    
+                    if( has_nav_menu( 'resource' ) ) {
+                        $args = array( 
+                            'theme_location'  => 'resource', 
+                            'container'       => false,
+                            'echo'            => false,
+                            'depth'           => 0,
+                            'items_wrap'      => '%3$s'
+                        ); 
+                        
+                        echo wp_nav_menu( $args );
+                        
+                    } else {
+                        usort($resource_categories, function($a, $b){ return strcasecmp($a->label,$b->label); });
+                        foreach ($resource_categories as $key => $value) {
+                            if ($value->name == 'post_format') {
+    
+                            } elseif ($get_category == $value->name) {
+                                echo "<li class='active'><a href='" . $current_page_url . "?category=" . $value->name . "'>" . $value->label . "</a></li>";
+                            } else {
+                                echo "<li><a href='" . $current_page_url . "?category=" . $value->name . "'>" . $value->label . "</a></li>";
+                            }
                         }
                     }
                     ?>
