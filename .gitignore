@@ -78,6 +78,7 @@ wp-content/mysql.sql
 /wp-content/plugins/*
 !/wp-content/plugins/sayenko-*
 !/wp-content/plugins/*-forked
+!/wp-content/plugins/Supertheme
 
 
 # large/disallowed file types
